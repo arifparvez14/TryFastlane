@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='TryFastlaneTests.xctest' tests='3' failures='1'>
+  <testsuite name='TryFastlaneUITests.TryFastlaneUITests' tests='2' failures='0'>
+    <testcase classname='TryFastlaneUITests.TryFastlaneUITests' name='testExample' time='10.256'/>
+    <testcase classname='TryFastlaneUITests.TryFastlaneUITests' name='testLaunchPerformance' time='29.584'/>
+  </testsuite>
+  <testsuite name='TryFastlaneTests.TryFastlaneTests' tests='1' failures='1'>
+    <testcase classname='TryFastlaneTests.TryFastlaneTests' name='testExample'>
+      <failure message='XCTAssertTrue failed - Test is right'>TryFastlaneTests/TryFastlaneTests.swift:25</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

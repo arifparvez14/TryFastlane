@@ -1,0 +1,57 @@
+default_platform(:ios)
+
+platform :ios do
+
+before_all do
+    ENV["SPACESHIP_2FA_SMS_DEFAULT_PHONE_NUMBER"] = "+817026731880"
+    ENV["FASTLANE_USER"] = "shoebamin017@gmail.com"
+    ENV["FASTLANE_PASSWORD"] = "F5ef2Wcm3kWjtQ6"
+    ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "jtgk-cbeh-lwhc-jckt"
+    ENV["FASTLANE_ITC_TEAM_NAME"] = "S M SHOEB AMIN"
+  end
+
+  desc "Create app on Apple Developer and App Store Connect sites"
+  lane :create_app do
+​    produce
+  end
+
+  desc "Take screenshots"
+  lane :screenshot do
+    snapshot
+  end
+
+  desc "Create ipa"
+  lane :build do
+    increment_build_number
+    gym
+  end
+
+  desc "Upload to App Store"
+  lane :upload do
+    deliver
+  end
+
+  lane :beta do
+  increment_build_number(
+    build_number: latest_testflight_build_number + 1,
+    xcodeproj: "TryFastlane.xcodeproj"
+  )
+  build_app(scheme: "TryFastlane")
+  upload_to_testflight
+  end
+
+  lane :tests do
+  run_tests(scheme: "TryFastlane")
+  end
+
+end
+
+
+
+
+
+
+
+
+
+
