@@ -22,7 +22,6 @@ class TryFastlaneTests: XCTestCase {
 
     func testExample() {
         var val = vc.FunctinTest(value1: 10,Value2: 20)
-        
         XCTAssertTrue(val == 30, "Test is right")
     }
 
