@@ -83,7 +83,7 @@ class ViewController: UIViewController {
     }
     
     func FunctinTest2(value1: Int, Value2: Int) -> Int {
-        print("Hello Worldwww")
+        print("Hello World3")
         return value1 - Value2
     }
   
