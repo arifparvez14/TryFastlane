@@ -81,6 +81,10 @@ class ViewController: UIViewController {
     func FunctinTest(value1: Int, Value2: Int) -> Int {
         return value1 + Value2
     }
+    
+    func FunctinTest2(value1: Int, Value2: Int) -> Int {
+        return value1 - Value2
+    }
   
   @IBAction func backgroundTapped(_ sender: Any) {
     view.endEditing(true)
