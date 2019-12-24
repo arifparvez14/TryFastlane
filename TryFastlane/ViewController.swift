@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     setRoundedCorners()
     chipCountTextfield.becomeFirstResponder()
+    print("Try again")
   }
   
   func setRoundedCorners() {
