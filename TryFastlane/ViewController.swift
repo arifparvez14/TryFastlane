@@ -87,7 +87,6 @@ class ViewController: UIViewController {
     }
   
   @IBAction func backgroundTapped(_ sender: Any) {
-    print("Background tapped")
     view.endEditing(true)
   }
 }
