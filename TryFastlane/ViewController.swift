@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     setRoundedCorners()
     chipCountTextfield.becomeFirstResponder()
+    print("Time added")
   }
   
   func setRoundedCorners() {
